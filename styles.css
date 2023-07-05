@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: white;  /* All text will be white */
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        background-image: url('https://i.ibb.co/khXkDf4/heroimage8.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-size: 16px;  /* Default font size for desktop */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.ibb.co/fGHfsKH/heroimage8916.png');
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed;
+        font-size: 18px;  /* Increased font size for mobile */
+    }
+}
+
+.main-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 100px; /* Adjust to your preference */
+    height: auto;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ref-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center alignment */
+    width: 60%; /* Adjust to your preference */
+    max-width: 600px; /* Adjust to your preference */
+    padding: 20px;
+    margin: auto; /* Center the container */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.ref-link {
+    margin-bottom: 20px;
+    text-align: center; /* Center text alignment */
+}
+
+.ref-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFA500;
+    padding: 16px;
+    background: #4169E1;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto; /* Center the link */
+}
+
+.ref-link a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.ref-link p {
+    margin-top: 10px;
+    color: #FFF; /* white color */
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust according to your needs */
+    text-align: center;
+    margin-top: 50px;
+    color: white;  /* The fine print is now white */
+    font-style: italic;  /* The fine print is now italic */
+}
