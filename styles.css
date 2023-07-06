@@ -24,7 +24,7 @@ html, body {
         padding: 0;
         background-image: url('https://i.ibb.co/fGHfsKH/heroimage8916.png');
         background-size: cover;
-        background-position: center; 
+        background-position: center;
         background-attachment: fixed;
         font-size: 18px;
     }
@@ -53,6 +53,10 @@ html, body {
     font-size: 1.2em;
 }
 
+.social-section p {
+    color: white;
+}
+
 .social-icons {
     display: flex;
     align-items: center;
@@ -70,10 +74,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%; 
-    max-width: 600px; 
+    width: 60%;
+    max-width: 600px;
     padding: 20px;
-    margin: auto; 
+    margin: auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
 }
@@ -94,7 +98,7 @@ html, body {
     background: #4169E1;
     border-radius: 5px;
     width: fit-content;
-    margin: auto; 
+    margin: auto;
 }
 
 .ref-link a img {
