@@ -1,1 +1,13 @@
 AOS.init();
+
+$(document).ready(function() {
+    $('#navbar').hide();
+    
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            $('#navbar').show();
+        } else {
+            $('#navbar').hide();
+        }
+    });
+});
