@@ -5,34 +5,41 @@ html, body {
     font-family: 'Exo', sans-serif;
     font-weight: bold;
     color: white;
+    background-image: url('https://i.ibb.co/khXkDf4/heroimage8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-@media screen and (min-width: 769px) {
-    body {
-        background-image: url('https://i.ibb.co/khXkDf4/heroimage8.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-size: 16px;
-    }
+.content-wrapper {
+    width: 80%;
+    margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-image: url('https://i.ibb.co/fGHfsKH/heroimage8916.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        font-size: 18px;
-    }
+#navbar {
+    background-color: #4169E1;
+}
+
+#navbar .content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 0;
+}
+
+#navbar a {
+    color: #FFA500;
+    text-decoration: none;
 }
 
 .main-container {
-    width: 80%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +54,7 @@ html, body {
 
 .logo {
     max-width: 120px;
+    margin: auto;
 }
 
 .description, .social-section p {
