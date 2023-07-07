@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crypto Referral Codes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="A page containing referral links">
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-container">
-        <div class="logo-section">
-            <img src="imgsrc/finalogo.png" alt="Logo of the website" class="logo">
-            <h1 class="description">Your One-Stop Shop For Crypto Referral Codes</h1>
+    <nav id="navbar">
+        <div class="content-wrapper">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+            </div>
         </div>
-        <div class="social-section">
-            <a href="SOCIAL LINK" class="social-icons">
-                <img src="imgsrc/twitter.png" alt="Click here to follow us!">
-                <p>Follow us on Twitter!</p>
-            </a>
-        </div>
-    </header>
-    <main>
-        <section class="ref-container" data-aos="bounce">
+    </nav>
+    <div class="content-wrapper">
+        <header class="main-container">
+            <div class="logo-section">
+                <img src="imgsrc/finalogo.png" alt="Logo of the website" class="logo">
+                <h1 class="description">Your One-Stop Shop For Crypto Referral Codes</h1>
+            </div>
+            <div class="social-section">
+                <a href="SOCIAL LINK" class="social-icons">
+                    <img src="imgsrc/twitter.png" alt="Click here to follow us!">
+                    <p>Follow us on Twitter!</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="ref-container" data-aos="bounce">
             <!-- Referral Link 1 -->
             <div class="ref-link">
                 <a href="REFERRAL LINK 1 HERE">
@@ -65,13 +75,24 @@
                 </a>
             </div>
             <!-- Add more referral links here -->
-        </section>
-    </main>
-    <footer>
-        <div>
-            <small>This is not financial advice, invest at your own risk.</small>
-        </div>
-    </footer>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <small>This is not financial advice, invest at your own risk.</small>
+            </div>
+        </footer>
+    </div>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            var $nav = $('#navbar');
+            $nav.hide();
+            $('#hamburger-icon').click(function() {
+                $nav.slideToggle(200);
+            });
+        });
+    </script>
 </body>
+</html>
