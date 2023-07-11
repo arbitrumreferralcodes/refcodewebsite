@@ -1,40 +1,75 @@
+---
+layout: default
+title: Blog
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our Blog</title>
+    <title>Crypto Referral Codes - Blog</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Blog for Crypto Referral Codes">
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-container">
-        <!-- Navigation bar for desktop -->
-        <div class="nav-bar">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="blog.html" class="nav-item">Blog</a>
-        </div>
-        <!-- Dropdown menu for mobile -->
-        <div class="mobile-nav">
-            <button class="dropdown-btn">Menu
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
+    <nav id="navbar">
+        <div class="content-wrapper">
+            <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="blog.html">Blog</a>
             </div>
         </div>
-        <div class="logo-section">
-            <img src="imgsrc/finalogo.png" alt="Logo of the website" class="logo">
-            <h1 class="description">Our Blog</h1>
-        </div>
-    </header>
-    <main>
-        <!-- Blog content goes here -->
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </nav>
+    <div class="content-wrapper">
+        <header class="main-container">
+            <div class="logo-section">
+                <img src="imgsrc/finalogo.png" alt="Logo of the website" class="logo">
+                <h1 class="description">Your One-Stop Shop For Crypto Referral Codes</h1>
+            </div>
+            <div class="social-section">
+                <a href="SOCIAL LINK" class="social-icons">
+                    <img src="imgsrc/twitter.png" alt="Click here to follow us!">
+                    <p>Follow us on Twitter!</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="ref-container" data-aos="bounce">
+            <h1>Latest Posts</h1>
+
+            <ul>
+              {% for post in site.posts %}
+                <li class="ref-link">
+                  <a href="{{ post.url }}">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.date | date: "%B %d, %Y" }}</p>
+                    <p>{{ post.excerpt }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <small>This is not financial advice, invest at your own risk.</small>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            var $nav = $('#navbar');
+            $nav.hide();
+            $('#hamburger-icon').click(function() {
+                $nav.slideToggle(200);
+            });
+        });
+    </script>
 </body>
 </html>

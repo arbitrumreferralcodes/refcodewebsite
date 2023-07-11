@@ -1,0 +1,5 @@
+title: My Awesome Blog
+email: myemail@example.com
+description: This is my awesome blog, where I write about awesome things.
+baseurl: "" # Leave this empty because your site is not hosted at a subpath
+url: "https://cryptoreferrals.xyz" # Your custom domain

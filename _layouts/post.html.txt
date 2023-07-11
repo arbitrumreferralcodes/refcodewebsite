@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="content-wrapper">
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <header class="main-container">
+            <div class="logo-section">
+                <img src="/imgsrc/finalogo.png" alt="Logo of the website" class="logo">
+                <h1 class="description">Your One-Stop Shop For Crypto Referral Codes</h1>
+            </div>
+            <div class="social-section">
+                <a href="SOCIAL LINK" class="social-icons">
+                    <img src="/imgsrc/twitter.png" alt="Click here to follow us!">
+                    <p>Follow us on Twitter!</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="ref-container" data-aos="bounce">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.date | date: "%B %d, %Y" }}</p>
+                {{ content }}
+            </section>
+        </main>
+        <footer>
+            <div>
+                <small>This is not financial advice, invest at your own risk.</small>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+</html>
